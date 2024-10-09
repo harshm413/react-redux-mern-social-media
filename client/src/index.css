@@ -1,0 +1,19 @@
+/* index.css */
+
+/* Ensure the body and html take the full height */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Take full viewport height */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    font-family: Arial, sans-serif;
+}
+
+/* Ensure the root container fills the height and prevents overflow */
+#root {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Prevent any overflow outside of the root */
+}

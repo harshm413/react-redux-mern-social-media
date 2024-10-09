@@ -1,0 +1,46 @@
+/* PostSide.css */
+.PostSide {
+    width: 50%;
+    min-width: 300px; /* Ensuring the PostSide doesn’t shrink too much */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.PostShare {
+    margin-bottom: 20px;
+}
+
+.Posts {
+    margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .PostSide {
+        width: 100%;
+        padding: 15px;
+        min-width: 0;
+    }
+
+    .PostShare,
+    .Posts {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .PostSide {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .PostShare,
+    .Posts {
+        margin-bottom: 10px;
+    }
+}

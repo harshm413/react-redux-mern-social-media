@@ -1,0 +1,106 @@
+/* Chat.css */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Chat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4; /* Optional background color */
+}
+
+/* Left Side (Chat List) */
+.Left-side-chat {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 350px; /* Limit the width of the chat list */
+    border-radius: 8px;
+}
+
+.Left-side-chat h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.Chat-container {
+    width: 100%;
+    overflow-y: auto;
+    padding-bottom: 20px; /* Adds some space to prevent clipping */
+}
+
+.Chat-list {
+    width: 100%;
+}
+
+.Chat-list > div {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/* Right Side (Chat Box) */
+.Right-side-chat {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 700px; /* Restrict max-width of the chat box */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-left: 20px;
+}
+
+.Right-side-chat .ChatBox {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.NavIcons {
+    width: 20rem;
+    align-self: flex-end;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .Chat {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100%;
+    }
+
+    .Left-side-chat,
+    .Right-side-chat {
+        max-width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .Right-side-chat {
+        margin-top: 20px;
+        max-width: 100%;
+    }
+
+    .NavIcons {
+        width: 100%;
+        align-self: center;
+    }
+}

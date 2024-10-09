@@ -1,0 +1,24 @@
+.navIcons {
+    display: flex;
+    flex-direction: row; /* Align icons horizontally */
+    gap: 20px; /* Space between icons */
+    justify-content: space-evenly; /* Evenly space the icons within the container */
+}
+
+.navIcons img,
+.navIcons svg {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.navIcons img:hover,
+.navIcons svg:hover {
+    opacity: 0.7; /* Slight transparency effect on hover */
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.navIcons a {
+    text-decoration: none; /* Remove link underline */
+}

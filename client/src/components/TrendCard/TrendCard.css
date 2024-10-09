@@ -1,0 +1,54 @@
+.TrendCard {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.TrendCard h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.trend {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    align-items: center;
+}
+
+.trend-name {
+    font-weight: bold;
+    color: #0073e6;
+    font-size: 16px;
+}
+
+.trend-shares {
+    color: #555;
+    font-size: 14px;
+}
+
+.TrendCard p {
+    color: #555;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Handle responsiveness */
+@media (max-width: 768px) {
+    .TrendCard {
+        padding: 15px;
+    }
+
+    .trend-name,
+    .trend-shares {
+        font-size: 14px;
+    }
+
+    .trend {
+        padding: 8px 0;
+    }
+}

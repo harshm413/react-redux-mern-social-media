@@ -1,0 +1,155 @@
+/* ProfileCard.css */
+
+.ProfileCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.ProfileImages {
+    position: relative;
+    width: 100%;
+}
+
+.ProfileImages img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.ProfileImages img:first-child {
+    height: 180px; /* Cover photo height */
+}
+
+.ProfileImages img:last-child {
+    position: absolute;
+    bottom: -60px; /* Position the profile image below the cover photo */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px; /* Profile image size */
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid white; /* Profile image border */
+}
+
+.ProfileName {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.ProfileName span {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+}
+
+.ProfileName span:first-child {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.followStatus {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.followStatus hr {
+    margin: 10px 0;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+.followStatus .follow {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.followStatus .follow span {
+    display: block;
+}
+
+.followStatus .follow:first-child span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.followStatus .follow:last-child span {
+    font-size: 16px;
+    color: #777;
+}
+
+.vl {
+    display: inline-block;
+    height: 40px;
+    border-left: 1px solid #eee;
+}
+
+.ProfileCard span a {
+    font-size: 14px;
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.ProfileCard span a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .ProfileCard {
+        padding: 15px;
+    }
+
+    .ProfileImages img:first-child {
+        height: 160px;
+    }
+
+    .ProfileImages img:last-child {
+        width: 100px;
+        height: 100px;
+        bottom: -50px;
+    }
+
+    .ProfileName span {
+        font-size: 14px;
+    }
+
+    .followStatus .follow span {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ProfileCard {
+        padding: 10px;
+    }
+
+    .ProfileImages img:first-child {
+        height: 140px;
+    }
+
+    .ProfileImages img:last-child {
+        width: 80px;
+        height: 80px;
+        bottom: -40px;
+    }
+
+    .ProfileName span {
+        font-size: 12px;
+    }
+
+    .followStatus .follow span {
+        font-size: 12px;
+    }
+
+    .followStatus .vl {
+        display: none; /* Hide the divider line on smaller screens */
+    }
+}

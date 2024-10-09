@@ -1,0 +1,84 @@
+/* Posts.css */
+
+.Posts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Post {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Post img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.Post .content {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.Post .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.Post .actions span {
+    color: #777;
+    cursor: pointer;
+}
+
+.Post .actions span:hover {
+    color: #0073e6;
+}
+
+/* Handle Loading and Error States */
+.Posts .loading {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+}
+
+.Posts .error {
+    text-align: center;
+    font-size: 18px;
+    color: red;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .Posts {
+        gap: 15px;
+    }
+
+    .Post {
+        padding: 12px;
+    }
+
+    .Post .content {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Post {
+        padding: 10px;
+    }
+
+    .Post .content {
+        font-size: 12px;
+    }
+
+    .Post .actions {
+        font-size: 12px;
+    }
+}

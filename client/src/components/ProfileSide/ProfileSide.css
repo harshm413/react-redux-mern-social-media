@@ -1,0 +1,59 @@
+/* ProfileSide.css */
+.ProfileSide {
+    width: 25%;
+    min-width: 250px; /* Ensuring that the profile side doesn’t shrink too much */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between components */
+}
+
+.ProfileSide h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Make LogoSearch and ProfileCard fit well in the profile sidebar */
+.LogoSearch {
+    margin-bottom: 20px;
+}
+
+.ProfileCard {
+    margin-bottom: 20px;
+}
+
+.FollowersCard {
+    margin-bottom: 20px;
+}
+
+/* Add responsive design for smaller screens */
+@media (max-width: 1024px) {
+    .ProfileSide {
+        width: 100%;
+        min-width: 0;
+        padding: 10px;
+    }
+
+    .LogoSearch,
+    .ProfileCard,
+    .FollowersCard {
+        margin-bottom: 15px; /* Reduce spacing between components for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .ProfileSide {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .LogoSearch,
+    .ProfileCard,
+    .FollowersCard {
+        margin-bottom: 10px; /* Further reduce space for mobile */
+    }
+}

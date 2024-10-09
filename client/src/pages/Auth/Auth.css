@@ -1,0 +1,145 @@
+/* Auth.css */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Left Side (Logo) */
+.a-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px; /* Space between logo and form */
+}
+
+.a-left img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.Webname h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+}
+
+.Webname h6 {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Right Side (Form) */
+.a-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 450px; /* Set a max-width for the form */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styling */
+.authForm {
+    width: 100%;
+}
+
+.authForm h3 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input Fields */
+.infoInput {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box; /* Prevent overflow by including padding/border in element's width */
+}
+
+.passwordInput {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.passwordInput input {
+    width: 48%; /* Set width for both password fields */
+    margin-right: 4%;
+    box-sizing: border-box; /* Prevent overflow */
+}
+
+.passwordInput input:last-child {
+    margin-right: 0;
+}
+
+.errorMessage {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.formFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.toggleFormLink {
+    color: #0073e6;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.toggleFormLink:hover {
+    text-decoration: underline;
+}
+
+.button {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; /* Make button take full width inside form */
+}
+
+.button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.infoButton {
+    background-color: #0073e6;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.infoButton:hover {
+    background-color: #005bb5;
+}

@@ -1,0 +1,20 @@
+/* App.css */
+
+/* Ensure the app's layout stretches to full height */
+.App {
+    display: flex;
+    flex-direction: column; /* Align components vertically */
+    height: 100vh; /* Use full viewport height */
+    overflow: hidden; /* Prevent horizontal scrolling */
+}
+
+/* To handle the scrolling of the main content */
+.App > * {
+    flex-grow: 1; /* Allow child components to grow and fill the space */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds viewport */
+}
+
+/* Optional: If you have a specific element that requires no scroll */
+.App .NoScrollElement {
+    overflow: hidden;
+}

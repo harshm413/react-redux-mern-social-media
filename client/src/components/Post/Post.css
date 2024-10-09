@@ -1,0 +1,83 @@
+.Post {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.Post img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Styling for the post reaction buttons */
+.postReact {
+    display: flex;
+    justify-content: flex-start; /* Align buttons to the left */
+    gap: 15px; /* Adds space between buttons */
+    margin-top: 10px;
+}
+
+/* Button style for like, comment, share */
+.reactBtn {
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    color: #555;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Styling when button is hovered */
+.reactBtn:hover {
+    color: #000;
+    opacity: 0.7;
+}
+
+/* Styling when the "like" button is clicked (liked state) */
+.reactBtn.liked {
+    color: red; /* Red color for the liked button */
+    font-weight: bold;
+}
+
+/* Styling for the like count text */
+.likesCount {
+    font-size: 12px;
+    color: var(--gray);
+    margin-left: 10px;
+}
+
+/* Post content section */
+.detail {
+    margin-top: 10px;
+}
+
+.detail b {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.detail span {
+    display: block;
+    color: black;
+    font-size: 14px; /* Larger font size for description */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 5px;
+}
+
+/* Color Variables */
+:root {
+    --heart-color: #ff4d4d; /* Red for likes */
+    --comment-share-color: #555; /* Dark gray for comment and share buttons */
+    --gray: #888;
+    --dark-gray: #333;
+}

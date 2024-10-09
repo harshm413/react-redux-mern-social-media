@@ -1,0 +1,66 @@
+/* Home.css */
+
+.Home {
+    display: flex;
+    justify-content: space-between; /* Creates space between the components */
+    gap: 20px; /* Space between all components */
+    padding: 20px; /* Padding around the entire page */
+    box-sizing: border-box; /* Ensures padding is included in the total width and height */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevents content from overflowing horizontally */
+}
+
+/* Profile Section */
+.ProfileSide {
+    flex: 0 0 25%; /* Fixed width for ProfileSide */
+    min-width: 250px; /* Ensures a minimum width */
+    background-color: #f4f4f4; /* Background color */
+    padding: 20px; /* Padding within ProfileSide */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Posts Section */
+.PostSide {
+    flex: 1; /* Takes the remaining space */
+    background-color: #fff; /* White background */
+    padding: 20px; /* Padding inside the PostSide */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Right Section */
+.RightSide {
+    flex: 0 0 25%; /* Fixed width for RightSide */
+    min-width: 250px; /* Ensures a minimum width */
+    background-color: #f4f4f4; /* Background color */
+    padding: 20px; /* Padding inside RightSide */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Make it responsive */
+@media (max-width: 1024px) {
+    .Home {
+        flex-direction: column; /* Stacks the components vertically on smaller screens */
+        gap: 10px; /* Reduces gap between components */
+        padding: 10px; /* Reduces padding */
+    }
+
+    .ProfileSide,
+    .PostSide,
+    .RightSide {
+        width: 100%; /* Components take full width */
+        min-width: 0; /* Prevents overflow */
+    }
+}
+
+@media (max-width: 768px) {
+    .Home {
+        padding: 5px; /* Reduce padding on very small screens */
+    }
+
+    .ProfileSide,
+    .PostSide,
+    .RightSide {
+        padding: 10px; /* Adjust padding */
+    }
+}
